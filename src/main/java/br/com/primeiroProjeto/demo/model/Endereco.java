@@ -1,5 +1,6 @@
 package br.com.primeiroProjeto.demo.model;
 
+import javax.annotation.ManagedBean;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -12,6 +13,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "TB_ENDERECO")
 @SequenceGenerator(allocationSize = 1, name = "endereco", sequenceName = "sq_endereco")
+@ManagedBean
 public class Endereco {
 
 	@Id
